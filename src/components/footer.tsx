@@ -9,6 +9,9 @@ export function Footer() {
         <p className="text-sm mt-2">
           Designed and built with professional care.
         </p>
+        <p className="text-sm mt-2">
+          <a href="https://github.com/hmenarges/hmenarges.github.io" target="_blank" rel="noopener noreferrer" className="hover:underline">View source on GitHub</a>
+        </p>
       </div>
     </footer>
   );
