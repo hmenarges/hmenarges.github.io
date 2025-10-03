@@ -9,7 +9,7 @@ export const resumeData = {
     email: 'hasheminarges76@gmail.com',
   },
   socials: [
-    { name: 'GitHub', url: 'https://github.com/NargesHme', icon: Github },
+    { name: 'GitHub', url: 'https://github.com/hmenarges', icon: Github },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/nargeshme', icon: Linkedin },
   ],
   summary: [
@@ -95,28 +95,28 @@ export const resumeData = {
         title: "Insurance Credit System Modernization",
         description: "Migrated a legacy insurance credit system from Java 5 to Java 8 and Oracle DB, significantly improving performance and maintainability.",
         techStack: ["Java 8", "Oracle DB", "Spring", "Hibernate"],
-        link: "https://github.com/NargesHme",
+        link: "#",
         company: "Naji R&D"
     },
     {
         title: "NLP-Powered Web Application",
         description: "Designed and deployed a full-stack web application for text classification, sentiment analysis, and entity extraction using Django and React.",
         techStack: ["Python", "Django", "ReactJS", "Machine Learning", "REST API"],
-        link: "https://github.com/NargesHme",
+        link: "https://github.com/hmenarges",
         company: "Freelance"
     },
     {
         title: "National Oil Company Web Services",
         description: "Built three enterprise-grade, robust web services to support critical operations for the National Oil Company.",
         techStack: ["Java 8", "Spring Boot", "REST APIs", "Oracle DB"],
-        link: "https://github.com/NargesHme",
+        link: "https://github.com/hmenarges",
         company: "Naji R&D"
     },
     {
         title: "Financial Market Trend Prediction",
         description: "Constructed statistical and machine learning models on financial data to help traders predict market trends and make informed decisions.",
         techStack: ["Python", "Machine Learning", "Deep Learning", "Data Pipelines"],
-        link: "https://github.com/NargesHme",
+        link: "https://github.com/hmenarges",
         company: "Bridge"
     }
   ]
