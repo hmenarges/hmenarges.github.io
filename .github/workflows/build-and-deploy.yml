@@ -9,21 +9,19 @@ permissions:
   contents: write
   pages: write
   id-token: write
-
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      - name: Install dependencies
-        run: bun install
+      - name: Install deps
+        run: bun install --frozen-lockfile
 
-      - name: Cache Next.js build
+      - name: Cache Next.js
         uses: actions/cache@v4
         with:
           path: .next/cache
@@ -31,17 +29,24 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-
 
-      - name: Build
-        run: bun run build
+      - name: Build (static export)
+        run: bun run build    # make sure this creates ./out (see Fix #1)
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: nextjs-build
           path: ./out
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+        id: deployment
+        uses: actions/deploy-pages@v4
