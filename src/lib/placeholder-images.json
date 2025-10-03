@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A professional portrait of Narges Hashemi.",
+      "imageUrl": "https://hmenarges.github.io/narges-hashemi-portrait.png",
+      "imageHint": "woman portrait"
+    }
+  ]
+}
