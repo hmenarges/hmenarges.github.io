@@ -108,13 +108,6 @@ The project is automatically deployed to GitHub Pages using GitHub Actions. The 
 
 This project is private and proprietary.
 
-## 📞 Contact
-
-**Narges Hashemi**
-- Email: hasheminarges76@gmail.com
-- LinkedIn: [linkedin.com/in/nargeshme](https://www.linkedin.com/in/nargeshme)
-- GitHub: [github.com/NargesHme](https://github.com/hmenarges)
-- Phone: +98 933 732 3247
 
 ---
 
