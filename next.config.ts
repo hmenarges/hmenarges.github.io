@@ -56,7 +56,6 @@ const nextConfig: NextConfig = {
       '@radix-ui/react-toast',
       '@radix-ui/react-tooltip',
     ],
-    turbopackPersistentCaching: true,
   },
   webpack: (config, {dev}) => {
     if (!dev) {
